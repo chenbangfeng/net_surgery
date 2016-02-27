@@ -1,0 +1,4 @@
+#model folders
+caffe_models/
+torch_models/
+
