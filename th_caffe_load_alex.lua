@@ -5,7 +5,8 @@ require("scripts.lua.common")
 -- torch.setdefaulttensortype("torch.CudaTensor")
 
 -- Load Model with CuDNN
-net = loadcaffe.load(proto_original_alex, model_original_alex,'cudnn')
+--net = loadcaffe.load(proto_fcn8s, model_fcn8s,'cudnn')
+net = loadcaffe.load(proto_fcn8s, model_fcn8s)
 
 -- Forward an image to net
 img = load_image2batch('data/test.jpg' , 10 , 227)

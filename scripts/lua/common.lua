@@ -29,10 +29,14 @@ proto_full_conv_1000_alex = 'caffe_proto/deploy_full_conv_1000.prototxt'
 model_full_conv_1000_alex = 'caffe_models/bvlc_alexnet_full_conv_1000.caffemodel'
 th_model_full_conv_1000_alex = 'torch_models/alexnet_full_conv_1000.net'
 
--- fcn-alex Trevor Darrell
-proto_fcn_alexnet = 'caffe_proto/fcn32.prototxt'
-model_fcn_alexnet = 'caffe_models/fcn32.caffemodel'
-th_model_fcn_alexnet = 'torch_models/fcn32.net'
+-- fcns Trevor Darrell
+proto_fcnalex_pascal = 'caffe_proto/fcn-alexnet-pascal.prototxt'
+model_fcnalex_pascal= 'caffe_models/fcn-alexnet-pascal.caffemodel'
+th_model_fcnalex_pascal = 'torch_models/fcnalex_pascal.net'
+
+proto_fcn32s = 'caffe_proto/fcn32s.prototxt'
+model_fcn32s= 'caffe_models/fcn32.caffemodel'
+th_model_fcn32s = 'torch_models/fcn32.net'
 
 proto_fcn8s = 'caffe_proto/fcn-8s-pascal.prototxt'
 model_fcn8s = 'caffe_models/fcn-8s-pascal.caffemodel'

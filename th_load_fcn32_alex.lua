@@ -12,7 +12,7 @@ require("scripts.lua.common")
 
 -- Load Model with CuDNN
 --net = loadcaffe.load(proto_fcn_alexnet , model_fcn_alexnet ,'cudnn')
-net = loadcaffe.load(proto_fcn_alexnet , model_fcn_alexnet )
+net = loadcaffe.load(proto_fcnalex_pascal , model_fcnalex_pascal )
 --net = torch.load(th_model_fcn_alexnet)
 
 torch.save(th_model_fcn_alexnet,net)

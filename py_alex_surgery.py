@@ -22,8 +22,11 @@ proto_full_conv_1000_alex = 'deploy_full_conv_1000.prototxt'
 model_full_conv_1000_alex = \
     'caffe_models/bvlc_alexnet_full_conv_1000.caffemodel'
 
-proto_fcn_alexnet = 'caffe_proto/fcn32.prototxt'
-model_fcn_alexnet = 'caffe_models/fcn32.caffemodel'
+proto_fcn32 = 'caffe_proto/fcn32.prototxt'
+model_fcn32 = 'caffe_models/fcn32.caffemodel'
+
+proto_fcnalex_pascal = 'caffe_proto/fcn-alexnet-pascal.prototxt'
+model_fcnalex_pascal = 'caffe_models/fcn-alexnet-pascal.caffemodel'
 
 out_net_model = model_full_conv_1000_alex
 
@@ -33,7 +36,7 @@ out_net_model = model_full_conv_1000_alex
 
 # -- First ---------------------------------------------------------
 # Load the original net with fc
-net = caffe.Net(proto_original_alex, model_original_alex, caffe.TEST)
+net = caffe.Net(proto_fcnalex_pascal, model_fcnalex_pascal, caffe.TEST)
 # extract fcs
 # for full_conv uncomment this
 params = ['fc6', 'fc7', 'fc8']
